@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>2048</title>
+</head>
+
+<body>
+    <div class="Upper">
+        <div class="title-container">
+            <div class="logo">2048</div>
+            <div class="score-container">
+                <div class="score">
+                    SCORE
+                    <span id="current-score">0</span>
+                    <div id="score-increase">+0</div>
+                </div>
+                <div class="score">BEST<span id="high-score">0</span></div>
+            </div>
+        </div>
+        <div class="subtitle-container">
+            <div class="subtitle">
+                Join the tiles, get to <b>2048!</b><br>
+                <a href="#howtoPlay" id="wheretoPlay">How to play →</a>
+            </div>
+            <button id="newgame-btn">New Game</button>
+        </div>
+    </div>
+
+
+    <div class="game-container">
+        <div class="grid">
+            <div class="cell" data-row="0" data-col="0"></div>
+            <div class="cell" data-row="0" data-col="1"></div>
+            <div class="cell" data-row="0" data-col="2"></div>
+            <div class="cell" data-row="0" data-col="3"></div>
+            <div class="cell" data-row="1" data-col="0"></div>
+            <div class="cell" data-row="1" data-col="1"></div>
+            <div class="cell" data-row="1" data-col="2"></div>
+            <div class="cell" data-row="1" data-col="3"></div>
+            <div class="cell" data-row="2" data-col="0"></div>
+            <div class="cell" data-row="2" data-col="1"></div>
+            <div class="cell" data-row="2" data-col="2"></div>
+            <div class="cell" data-row="2" data-col="3"></div>
+            <div class="cell" data-row="3" data-col="0"></div>
+            <div class="cell" data-row="3" data-col="1"></div>
+            <div class="cell" data-row="3" data-col="2"></div>
+            <div class="cell" data-row="3" data-col="3"></div>
+        </div>
+    </div>
+
+    <div id="game-over">
+        <div class="text">
+            Game Over!
+        </div>
+        <button id="restart-btn">Try again</button>
+    </div>
+
+    <div id="game-win">
+        <div class="text">
+            You Win!
+        </div>
+        <div class="btn-container">
+            <button id="keepgoing-btn">Keep goning</button>
+            <button id="tryagain-btn">Try again</button>
+        </div>
+    </div>
+    <div class="manual">
+        <strong>HOW TO PLAY:</strong> Use your <b>arrow keys</b> to move the tiles. Tiles with the same number
+        <b>merge into one</b>when they touch.Add them up to reach <b>2048!</b></br>
+        <a href="#wheretoPlay" id="howtoPlay">Start playing →</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
